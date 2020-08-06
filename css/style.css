@@ -100,34 +100,6 @@ img {
   transform: scale(1);
 }
 
-.adress-mail-svg {
-  display: inline-block;
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
-  fill: var(--text-main-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adress-tel-svg {
-  display: inline-block;
-  width: 10px;
-  height: 15px;
-  margin-right: 10px;
-  fill: var(--text-main-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adress-mail:hover .adress-mail-svg,
-.adress-mail:focus .adress-mail-svg {
-  fill: var(--accent-color);
-}
-
-.adress-tel:hover .adress-tel-svg,
-.adress-tel:focus .adress-tel-svg {
-  fill: var(--accent-color);
-}
-
 .header-adress-list-item {
   display: flex;
   justify-content: center;
@@ -198,25 +170,6 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .navigation-menu-link::after {
-  position: absolute;
-  bottom: 0;
-  content: "";
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  opacity: 0;
-  border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-}
-
-.navigation-menu-link:hover::after {
-  opacity: 1;
-} */
-
 .navigation-menu-link:hover,
 .navigation-menu-link:focus {
   color: var(--accent-color);
@@ -224,6 +177,9 @@ img {
 
 .adress-mail,
 .adress-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-style: normal;
   color: var(--text-main-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -240,6 +196,31 @@ img {
 .adress-map:hover,
 .adress-map:focus {
   color: var(--accent-color);
+}
+
+.adress-mail-svg,
+.adress-tel-svg {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: var(--text-main-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-tel-svg {
+  width: 10px;
+  height: 15px;
+}
+
+.adress-mail:hover .adress-mail-svg,
+.adress-mail:focus .adress-mail-svg {
+  fill: var(--accent-color);
+}
+
+.adress-tel:hover .adress-tel-svg,
+.adress-tel:focus .adress-tel-svg {
+  fill: var(--accent-color);
 }
 
 /* HERO_SECTION */
